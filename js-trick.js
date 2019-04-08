@@ -15,4 +15,8 @@ function differenceInAges (ages) {
 
 */
 
+/*
 
+Good trick to use a module.exports utility function for ip checks & initialize a constant with a boolean value (set to true/false) to determine if the IP check will be applied or not. 
+
+*/
