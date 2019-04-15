@@ -20,3 +20,6 @@ Good trick to use a module.exports utility function for ip checks & initialize a
 */
 
 // Get data about users: window.universal_variable.user 
+
+
+// wrapper for native app for coral   https://oxynative.coral.co.uk/
