@@ -23,7 +23,6 @@ Good trick to use a module.exports utility function for ip checks & initialize a
 
 
 // wrapper for native app for coral   https://oxynative.coral.co.uk/
-<<<<<<< HEAD
 
 /*
 
@@ -46,6 +45,4 @@ Good trick to use a module.exports utility function for ip checks & initialize a
 
       A good trick to use setInterval(myTimer, 1000) and a way to stop the counter with clearInterval(myVar)
 */
-=======
 // katas?
->>>>>>> 822c33430ca07e2ac9971f377fba397a4229787b
