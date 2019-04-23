@@ -23,3 +23,25 @@ Good trick to use a module.exports utility function for ip checks & initialize a
 
 
 // wrapper for native app for coral   https://oxynative.coral.co.uk/
+
+/*
+
+      function getUserInfo() {
+        const userCheck = setInterval(() => {
+          if(
+            window.localStorage.getItem('userId')
+            && window.localStorage.getItem('lbruser')
+            && ($('body').attr('authenticated') === 'true') || ($('body').attr('authenticated') === 'false')
+            ) {
+            authenticated = $('body').attr('authenticated') === 'true'
+            userId = window.localStorage.getItem('userId')
+            username = window.localStorage.getItem('lbruser')
+            clearInterval(userCheck)
+            console.log(2.25)
+            applySegmentation()
+          } 
+        }, 10)
+      }
+
+      A good trick to use setInterval(myTimer, 1000) and a way to stop the counter with clearInterval(myVar)
+*/
