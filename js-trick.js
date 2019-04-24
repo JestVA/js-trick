@@ -46,3 +46,34 @@ Good trick to use a module.exports utility function for ip checks & initialize a
       A good trick to use setInterval(myTimer, 1000) and a way to stop the counter with clearInterval(myVar)
 */
 // katas?
+
+/*
+KATA: https://www.codewars.com/kata/stringy-strings/
+In so many cases where the solution is not evident, adding an outside
+configuration parameter is often the ideal way to chip at the solution.
+Like here, adding an array with our values 0, 1 from which the function
+can loop the values and push them in the array. 
+
+const stringy = size => {
+  const binary = [0, 1]
+  let string = []
+  for (let i = 1; i <= size; i++) {
+    i % 2 === 0 ? string.push(binary[0]) : string.push(binary[1])
+    
+    
+  }
+  return string.join('')
+}
+
+Also a really good solution:
+function stringmy(size) {
+  var str='';
+  for( var i=1; i<=size; i++ )
+    str+=i%2;
+  return str;
+}
+
+The basic assumption is that the remainder is always 1 when we have an odd number.
+And 0 if the number is even.
+Clever indeed, it bypasses the need for the initial values (0, 1) whatsoever.
+*/
