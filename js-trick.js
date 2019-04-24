@@ -86,3 +86,16 @@ use of repeat feature: The repeat() method returns a new string with a specified
 It's a method of string. 
 
 */
+
+/*
+https://www.codewars.com/kata/area-of-a-square/
+
+const squareArea = (A) => {
+  let radius = 2 / Math.PI * A
+  let area = Math.pow(radius, 2)
+  return +area.toFixed(2)
+}
+
+Struggled to solve this a while ago, now I focused better and found the right mathematical / geometry concepts to solve the function.
+
+*/
