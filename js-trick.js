@@ -105,3 +105,14 @@ Convert number to string with shortcut:
 NumberObject + '' // output 'NumberObject'
 12 + '' // output '12'
 */
+
+/*
+KATA: https://www.codewars.com/kata/training-js-number-14-methods-of-number-object-tostring-and-tolocalestring/train/javascript
+
+const colorOf = (...args) => '#' + [...args].map(color => color.toString(16))
+    .map(colorCode => colorCode.length == 1 ? '0' + colorCode : colorCode).join('')
+  
+This is a solution I quite enjoy actually. 
+Because 1. I use rest syntax for function parameters (there where 3) and then use the same to spread in an array. And the 1 liner solution. 
+
+*/
