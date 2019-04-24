@@ -76,4 +76,13 @@ function stringmy(size) {
 The basic assumption is that the remainder is always 1 when we have an odd number.
 And 0 if the number is even.
 Clever indeed, it bypasses the need for the initial values (0, 1) whatsoever.
+
+
+const stringy = size => "10".repeat(size).slice(0,size);
+
+
+This is actually the solution that I like the most! Happy 1 liner.
+use of repeat feature: The repeat() method returns a new string with a specified number of copies of the string it was called on.
+It's a method of string. 
+
 */
