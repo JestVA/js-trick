@@ -99,3 +99,9 @@ const squareArea = (A) => {
 Struggled to solve this a while ago, now I focused better and found the right mathematical / geometry concepts to solve the function.
 
 */
+
+/*
+Convert number to string with shortcut:
+NumberObject + '' // output 'NumberObject'
+12 + '' // output '12'
+*/
