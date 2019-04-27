@@ -121,3 +121,15 @@ Because 1. I use rest syntax for function parameters (there where 3) and then us
 const doubleChar = str => [...str].map(l => l + l).join``
 
 // Doing slice on an array [].slice() makes a copy of the array
+
+// This is because we want immutability in our software:
+
+var player = {score: 1, name: 'Jeff'};
+
+var newPlayer = Object.assign({}, player, {score: 2});
+// Now player is unchanged, but newPlayer is {score: 2, name: 'Jeff'}
+
+// Or if you are using object spread syntax proposal, you can write:
+// var newPlayer = {...player, score: 2};
+
+// Take note of the spread syntax ^^
