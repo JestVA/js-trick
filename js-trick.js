@@ -119,3 +119,5 @@ Because 1. I use rest syntax for function parameters (there where 3) and then us
 
 // This kata I remembered to spread a string in an array with spread syntax, quite handy indeed 
 const doubleChar = str => [...str].map(l => l + l).join``
+
+// Doing slice on an array [].slice() makes a copy of the array
