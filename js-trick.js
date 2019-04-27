@@ -116,3 +116,6 @@ This is a solution I quite enjoy actually.
 Because 1. I use rest syntax for function parameters (there where 3) and then use the same to spread in an array. And the 1 liner solution. 
 
 */
+
+// This kata I remembered to spread a string in an array with spread syntax, quite handy indeed 
+const doubleChar = str => [...str].map(l => l + l).join``
