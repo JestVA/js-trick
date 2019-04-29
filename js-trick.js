@@ -136,3 +136,24 @@ var newPlayer = Object.assign({}, player, {score: 2});
 
 // Unlike the array push() method you might be more familiar with, the concat() method doesn’t mutate the original array, so we prefer it.
 
+// in JavaScript, true && expression always evaluates to expression, and false && expression always evaluates to false.
+
+function Mailbox(props) {
+  const unreadMessages = props.unreadMessages;
+  return (
+    <div>
+      <h1>Hello!</h1>
+      {unreadMessages.length > 0 &&
+        <h2>
+          You have {unreadMessages.length} unread messages.
+        </h2>
+      }
+    </div>
+  );
+}
+
+const messages = ['React', 'Re: React', 'Re:Re: React'];
+ReactDOM.render(
+  <Mailbox unreadMessages={messages} />,
+  document.getElementById('root')
+);
