@@ -157,3 +157,9 @@ ReactDOM.render(
   <Mailbox unreadMessages={messages} />,
   document.getElementById('root')
 );
+
+// Basic example
+21 > 3 && 1 + 2
+3
+21 < 3 && 1 + 2
+false
