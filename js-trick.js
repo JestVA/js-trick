@@ -133,3 +133,6 @@ var newPlayer = Object.assign({}, player, {score: 2});
 // var newPlayer = {...player, score: 2};
 
 // Take note of the spread syntax ^^
+
+// Unlike the array push() method you might be more familiar with, the concat() method doesn’t mutate the original array, so we prefer it.
+
