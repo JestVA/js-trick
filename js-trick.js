@@ -163,3 +163,13 @@ ReactDOM.render(
 3
 21 < 3 && 1 + 2
 false
+
+
+// Want to finish this kata tomorrow, it does not pass the random tests which start with a Capital letter already
+String.prototype.capitalize = function () { 
+   
+    return this.split(``)[0].replace(/a-z/g, String.fromCharCode(this.split(``)[0].charCodeAt() - 32))
+   
+    //    return this.replace(/a-z/g, String.fromCharCode(this.split(``)[0].charCodeAt() - 32) + this.slice(1))
+       
+} 
