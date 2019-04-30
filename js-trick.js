@@ -174,3 +174,15 @@ String.prototype.capitalize = function () {
 } 
 
 // So the regex was not working before because I forgot to put the [] for the dictionary lookup 
+
+// What I learned: that using the split to create an array so that I can "pop" the first value is a bit redundant 
+// Instead, I could use native method charCodeAt() and specify the index for the char from the string:
+'dorin'.charCodeAt(4) || 'dorin'.charCodeAt(0) // first one returns char code of 'n' (last letter) and second one returns char code of 'd'
+// If you try to specify an index "outside of the string range" it returns NaN:
+'dorin'.charCodeAt(5)
+NaN
+// IF you do not specify an index, default first index is returned (charCodeAt() is similar to charCodeAt(0))
+// If I wanted to further simplify my solution, I would introduce a function:
+String.prototype.capitalize = function () { 
+  return this.replace(/[a-z]/g, x => String.fromCharCode(x.charCodeAt(0) - 32))
+}
