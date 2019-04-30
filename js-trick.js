@@ -186,3 +186,18 @@ NaN
 String.prototype.capitalize = function () { 
   return this.replace(/[a-z]/g, x => String.fromCharCode(x.charCodeAt(0) - 32))
 }
+
+// And a solution which does not use the above methods:
+String.prototype.capitalize = function()
+{
+  var searchArray = 'abcdefghijklmnopqrstuvwxyz';
+  var replaceArray = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  
+  var array = this.split('');
+  var index = searchArray.indexOf(array[0]);
+  if (index > -1) array[0] = replaceArray[index];
+  
+  return array.join('');
+}
+// Whilst I do not enjoy this solution (1st one is more functional), this illustrates the mechanism well enough. 
+// To define an array and use a lookup with index in another array to solve it. But this one as an added afterthought uses mutation and mutates the initial array. Not pure.
