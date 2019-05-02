@@ -199,3 +199,36 @@ String.prototype.capitalize = function()
 }
 // Whilst I do not enjoy this solution (1st one is more functional), this illustrates the mechanism well enough. 
 // To define an array and use a lookup with index in another array to solve it. But this one as an added afterthought uses mutation and mutates the initial array. Not pure.
+
+// =========================================================================
+
+/* I started this new lvl 4 kyu Kata
+https://www.codewars.com/kata/nesting-structure-comparison/train/javascript
+Start to solve below...
+*/
+
+Array.prototype.sameStructureAs = function (other) {
+  console.log(other)
+  console.log(this)
+
+  
+  if (isArray(other)) {
+       
+  const myMap = this.map(element => typeof element === 'object' ? "o" : 'x')
+  console.log(myMap)
+  const myNewMap = other.map(element => typeof element === 'object' ? "o" : 'x')
+  console.log(myNewMap)
+  
+  "object"
+  "number"
+  "undefined"
+    
+
+    
+    return console.log('I\'m an array')
+  
+  }
+  return false
+};
+
+// ==========================================================================
