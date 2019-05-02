@@ -236,3 +236,4 @@ Array.prototype.sameStructureAs = function (other) {
 
 // Remember, "\" is used for escaping next characters so that they do not break the sequence
 // Remember the lvl 2 kata you solved
+// Learn that you can create a function using the []['map']['constructor'] subscript notation. Cool for tricks !!
