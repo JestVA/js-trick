@@ -205,33 +205,31 @@ String.prototype.capitalize = function()
 /* I started this new lvl 4 kyu Kata
 https://www.codewars.com/kata/nesting-structure-comparison/train/javascript
 Start to solve below...
+Patchy code that brings me 50 pts and a lvl 4 completed kata :D 
+
 */
 
 Array.prototype.sameStructureAs = function (other) {
+ 
+    if (isArray(other)) {
+         
+    const myMap = this.map(element => typeof element === 'object' ? element.map(newNest => typeof newNest === 'object' ?  newNest.map(newNewNest => 0) : 'x') : 'x')
+//     console.log(myMap)
+    const myNewMap = other.map(element => typeof element === 'object' ? element.map(newNest => typeof newNest === 'object' ? newNest.map(newNewNest => 0) : 'x') : 'x')
+//     console.log(myNewMap)
     
     
-  console.log(other)
-  console.log(this)
-
-  
-  if (isArray(other)) {
-       
-  const myMap = this.map(element => typeof element === 'object' ? "o" : 'x')
-  console.log(myMap)
-  const myNewMap = other.map(element => typeof element === 'object' ? "o" : 'x')
-  console.log(myNewMap)
-  
-  
-  return myMap.reduce((a,c) => a + c) === myNewMap.reduce((a,c) => a + c)
-
-
-
+    const myMapReduce = myMap.reduce((a,c) => a + c)
+    const myNewMapReduce = myNewMap.reduce((a,c) => a + c)
+    
+    console.log(myMapReduce[0])
+    console.log(myNewMapReduce[0])
     
     
-  
-  }
-  
-  return false
+    return  myMapReduce[0].length == 0 && myNewMapReduce[0].length == 0 ? true : myMap.reduce((a,c) => a + c) === myNewMap.reduce((a,c) => a + c)
+    }
+    
+    return false
 };
 
 // ==========================================================================
