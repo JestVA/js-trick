@@ -208,6 +208,8 @@ Start to solve below...
 */
 
 Array.prototype.sameStructureAs = function (other) {
+    
+    
   console.log(other)
   console.log(this)
 
@@ -219,15 +221,16 @@ Array.prototype.sameStructureAs = function (other) {
   const myNewMap = other.map(element => typeof element === 'object' ? "o" : 'x')
   console.log(myNewMap)
   
-  "object"
-  "number"
-  "undefined"
-    
+  
+  return myMap.reduce((a,c) => a + c) === myNewMap.reduce((a,c) => a + c)
+
+
 
     
-    return console.log('I\'m an array')
+    
   
   }
+  
   return false
 };
 
