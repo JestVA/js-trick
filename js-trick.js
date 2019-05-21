@@ -238,3 +238,6 @@ Array.prototype.sameStructureAs = function (other) {
 // Remember the lvl 2 kata you solved
 // Learn that you can create a function using the []['map']['constructor'] subscript notation. Cool for tricks !!
 // use flat() array method to flatten a multidimensional array 
+
+// Use .repeat() to repeat a string "n" number of times
+const repeatStr = (n, s) => s.repeat(n)
