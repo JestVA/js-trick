@@ -241,3 +241,6 @@ Array.prototype.sameStructureAs = function (other) {
 
 // Use .repeat() to repeat a string "n" number of times
 const repeatStr = (n, s) => s.repeat(n)
+
+// Remember that in the console, numbers (ints) appear as blue colored while the same number if it was a string it would be grey. 
+// Useful when you expect to be passed a number and do a strict check comparison so it does not do type coercing
