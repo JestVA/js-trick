@@ -281,3 +281,5 @@ myNewStateToDo[0]
 
 // logs
 "drink water"
+
+// using object assing helps keeping the reducers as pure functions, without mutating data inside the reducer
