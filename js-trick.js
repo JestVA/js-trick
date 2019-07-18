@@ -252,3 +252,32 @@ const listenUserView = options.uv.once(/egUser/, ({ user: { isGuest: isGuest } }
   console.log(`${typeof !isGuest}`) // boolean
   resolve({ execute: !isGuest })
 })
+
+// Play with object assign for Redux pattern
+Object.assign({}, ['walk Dita'], {
+  completed: true
+})
+
+// logs
+{0: "walk Dita", completed: true}0: "walk Dita"completed: true__proto__: Object
+
+
+myNewStateToDo = Object.assign({}, ['drink water'], { completed: false })
+
+// logs
+{0: "drink water", completed: false}0: "drink water"completed: false__proto__: Object
+
+myNewStateToDo
+
+// logs
+{0: "drink water", completed: false}0: "drink water"completed: false__proto__: Object
+
+myNewStateToDo.completed
+
+// logs
+false
+
+myNewStateToDo[0]
+
+// logs
+"drink water"
