@@ -244,3 +244,11 @@ const repeatStr = (n, s) => s.repeat(n)
 
 // Remember that in the console, numbers (ints) appear as blue colored while the same number if it was a string it would be grey. 
 // Useful when you expect to be passed a number and do a strict check comparison so it does not do type coercing
+
+// Destructuring deep inside object (in event -> user -> isGuest property)
+
+const listenUserView = options.uv.once(/egUser/, ({ user: { isGuest: isGuest } }) => {
+  console.log(`---- egUser: Visitor is authenticated: ${!isGuest} ----`)
+  console.log(`${typeof !isGuest}`) // boolean
+  resolve({ execute: !isGuest })
+})
