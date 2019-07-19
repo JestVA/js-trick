@@ -238,3 +238,48 @@ Array.prototype.sameStructureAs = function (other) {
 // Remember the lvl 2 kata you solved
 // Learn that you can create a function using the []['map']['constructor'] subscript notation. Cool for tricks !!
 // use flat() array method to flatten a multidimensional array 
+
+// Use .repeat() to repeat a string "n" number of times
+const repeatStr = (n, s) => s.repeat(n)
+
+// Remember that in the console, numbers (ints) appear as blue colored while the same number if it was a string it would be grey. 
+// Useful when you expect to be passed a number and do a strict check comparison so it does not do type coercing
+
+// Destructuring deep inside object (in event -> user -> isGuest property)
+
+const listenUserView = options.uv.once(/egUser/, ({ user: { isGuest: isGuest } }) => {
+  console.log(`---- egUser: Visitor is authenticated: ${!isGuest} ----`)
+  console.log(`${typeof !isGuest}`) // boolean
+  resolve({ execute: !isGuest })
+})
+
+// Play with object assign for Redux pattern
+Object.assign({}, ['walk Dita'], {
+  completed: true
+})
+
+// logs
+{0: "walk Dita", completed: true}0: "walk Dita"completed: true__proto__: Object
+
+
+myNewStateToDo = Object.assign({}, ['drink water'], { completed: false })
+
+// logs
+{0: "drink water", completed: false}0: "drink water"completed: false__proto__: Object
+
+myNewStateToDo
+
+// logs
+{0: "drink water", completed: false}0: "drink water"completed: false__proto__: Object
+
+myNewStateToDo.completed
+
+// logs
+false
+
+myNewStateToDo[0]
+
+// logs
+"drink water"
+
+// using object assing helps keeping the reducers as pure functions, without mutating data inside the reducer
